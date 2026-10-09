@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "repro",
-    "slug": "repro",
+    "name": "rns-search-tab-repro",
+    "slug": "rns-search-tab-repro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.rnssearchtabrepro"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +21,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "rnsrepro"
   }
 }

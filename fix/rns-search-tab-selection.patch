@@ -1,0 +1,18 @@
+--- a/ios/tabs/host/RNSTabBarController.mm	2026-10-09 18:34:45
++++ b/ios/tabs/host/RNSTabBarController.mm	2026-10-09 18:34:45
+@@ -331,7 +331,6 @@
+ 
+ - (void)performContainerUpdate
+ {
+-  _isHandlingUserTabSelection = NO;
+   _isHandlingExplicitSelectionUpdate = YES;
+   [self createTabBarItemsIfNeeded];
+   [self updateChildViewControllersIfNeeded];
+@@ -626,6 +625,7 @@
+ 
+ - (void)applySelectedScreenController:(nonnull UIViewController *)screenController
+ {
++  _isHandlingUserTabSelection = NO;
+ #if RNS_UITAB_API_SDK_AVAILABLE
+   if (RNS_UITAB_API_ENABLED) {
+     if (![self isMoreNavigationControllerTabBarItemSelected]) {
