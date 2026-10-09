@@ -35,7 +35,7 @@ npx expo run:ios
 
 **Expected:** every user selection of the search tab sends `onTabSelected`, and JS state follows UIKit.
 
-The app has no timers or background updates. Driving the steps with automation dropped 9 of 10 selections, with only the first one getting through.
+Driving the steps with automation dropped 9 of 10 selections, with only the first one getting through.
 
 ## Why
 
